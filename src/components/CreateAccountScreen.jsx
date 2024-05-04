@@ -18,6 +18,14 @@ export const CreateAccountScreen = () => {
 
 
           // Validar que el saldo no sea 0 o negativo
+          if(!username) {
+            setMessage('EL Nombre de usuario no puede estar Vacio ');
+            setTimeout(() => {
+                setMessage('');
+              }, 3000);
+          
+            return
+          }
           if(parseFloat(balance) <= 0) {
             setMessage('El saldo inicial debe ser mayor que 0');
             setTimeout(() => {
