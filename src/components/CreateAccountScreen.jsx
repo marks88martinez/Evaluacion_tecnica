@@ -6,7 +6,7 @@ export const CreateAccountScreen = () => {
     const {addAccount} = useAccountContext();
 
     const [username, setUsername] =  useState('');
-    const [balance, setBalance] = useState(50000);
+    const [balance, setBalance] = useState(0);
 
 
     
